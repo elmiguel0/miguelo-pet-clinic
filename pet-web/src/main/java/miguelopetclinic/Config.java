@@ -4,10 +4,9 @@ package miguelopetclinic;
  * tag on Owner and Vet map services where not bean pick up.							  */
 
 import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.Configuration;
 
-import miguelopetclinic.map.OwnerServiceMap;
-import miguelopetclinic.map.VetServiceMap;
+import miguelopetclinic.service.map.OwnerServiceMap;
+import miguelopetclinic.service.map.VetServiceMap;
 import miguelopetclinic.service.OwnerService;
 import miguelopetclinic.service.VetService;
 

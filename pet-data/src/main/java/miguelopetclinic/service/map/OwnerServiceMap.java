@@ -1,4 +1,4 @@
-package miguelopetclinic.map;
+package miguelopetclinic.service.map;
 
 import java.util.Set;
 
