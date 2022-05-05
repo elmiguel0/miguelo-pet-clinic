@@ -13,10 +13,10 @@ import miguelopetclinic.service.VetService;
 //@Configuration
 public class Config {
 	
-	@Bean
+	/*@Bean
 	OwnerService ownerService() {
 		return new OwnerServiceMap();
-	}
+	}*/
 	
 	@Bean 
 	VetService vetService() {
