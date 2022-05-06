@@ -5,9 +5,7 @@ package miguelopetclinic;
 
 import org.springframework.context.annotation.Bean;
 
-import miguelopetclinic.service.map.OwnerServiceMap;
 import miguelopetclinic.service.map.VetServiceMap;
-import miguelopetclinic.service.OwnerService;
 import miguelopetclinic.service.VetService;
 
 //@Configuration
@@ -17,10 +15,11 @@ public class Config {
 	OwnerService ownerService() {
 		return new OwnerServiceMap();
 	}*/
-	
+
+	/*
 	@Bean 
 	VetService vetService() {
-		return new VetServiceMap();
+		return new VetServiceMap(specialtyService);
 	}
-
+	*/
 }
