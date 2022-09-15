@@ -1,5 +1,6 @@
 package miguelopetclinic.service.map;
 
+import java.util.Optional;
 import java.util.Set;
 
 import miguelopetclinic.model.Pet;
@@ -67,7 +68,10 @@ public class OwnerServiceMap extends AbstractMapService <Owner,Long> implements 
 
 	@Override
 	public Owner findByLastName(String lastNAme) {
-		return null;
+        return  this.findAll().stream()
+                .filter(o -> o.getLastName().equalsIgnoreCase(lastNAme))
+                .findFirst()
+                .orElse(null);
 	}
     
 }
