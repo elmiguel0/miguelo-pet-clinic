@@ -18,10 +18,14 @@ jobs:
     steps:
       # Checkout the code as the first step.
       - checkout
+      - run:
+          name: Instal
+          command: mvn intall -DskipTest
+          
       # Use mvn clean and package as the standard maven build phase
       - run:
-          name: Install
-          command: mvn install
+          name: Integration Test
+          command: mvn integration-test
           
 # Invoke jobs via workflows
 # See: https://circleci.com/docs/2.0/configuration-reference/#workflows
