@@ -19,8 +19,8 @@ jobs:
       # Checkout the code as the first step.
       - checkout
       - run:
-          name: Instal
-          command: mvn intall -DskipTest
+          name: Install
+          command: mvn install -DskipTest
           
       # Use mvn clean and package as the standard maven build phase
       - run:
